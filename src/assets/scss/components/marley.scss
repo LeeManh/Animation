@@ -1,0 +1,52 @@
+// ======= title =========
+.effect-marley .title {
+  padding-bottom: 1em;
+  text-align: right;
+  transition: 0.35s;
+  transform: translate3d(0, 1em, 0);
+}
+
+.effect-marley:hover .title {
+  transform: translate3d(0,0,0);
+}
+
+// ======= desc =========
+.effect-marley .desc {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4em 2em;
+  text-align: right;
+  transition: 0.35s 0.05s;
+  opacity: 0;
+  transform: translate3d(0, 4em, 0);
+}
+
+.effect-marley:hover .desc {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+// ======= under line =========
+.effect-marley .text-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.effect-marley .title::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  transform: translate3d(0, calc(100% + 1em), 0);
+  transition: 0.35s 0.05s;
+}
+
+.effect-marley:hover .title::before {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}

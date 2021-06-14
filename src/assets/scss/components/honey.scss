@@ -1,0 +1,53 @@
+.effect-honey {
+  background: #4a3753 !important;
+}
+.effect-honey .img-bg {
+  opacity: 0.9;
+  transition: 0.35s;
+}
+.effect-honey:hover .img-bg {
+  opacity: 0.5;
+
+}
+.effect-honey .caption {
+  position: absolute;
+
+}
+.effect-honey .caption::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: white;
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+  transition: 0.35s;
+}
+.effect-honey:hover .caption::before {
+  transform: translate3d(0, 0, 0);
+  opacity: 1 !important;
+}
+.effect-honey .text-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  padding: 2rem;
+  transition: 0.35s;
+  transform: translate3d(0,-20%,0);
+}
+.effect-honey .text-wrap .title > i {
+  opacity: 0;
+  transition: 0.35s;
+  transition-delay: 0.05s;
+}
+.effect-honey:hover .text-wrap {
+  transform: translate3d(0,0,0);
+}
+.effect-honey:hover .text-wrap .title > i {
+  opacity: 1;
+}
+

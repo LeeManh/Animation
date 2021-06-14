@@ -1,0 +1,72 @@
+.effect-oscar {
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%) !important;
+}
+// ====== image =======
+
+.effect-oscar .img-bg {
+	opacity: 0.9;
+	transition: 0.35s;
+}
+
+.effect-oscar:hover .img-bg {
+	opacity: 0.4;
+}
+
+// ====== caption =======
+
+.effect-oscar .caption {
+	padding: 3em;
+	background-color: rgba(58,52,42,0.7);
+	transition: 0.35s;
+  text-align: center;
+
+}
+
+.effect-oscar:hover .caption {
+	background-color: rgba(58,52,42,0);
+}
+
+.effect-oscar .caption::before {
+	position: absolute;
+  inset: 30px;
+	border: 1px solid #fff;
+	content: '';
+  opacity: 0;
+	transform: scale(0);
+  transition: 0.35s;
+}
+
+.effect-oscar:hover .caption::before {
+	opacity: 1;
+	transform: scale(1);
+}
+
+// ====== title =======
+
+.effect-oscar .title {
+	margin: 20% 0 10px 0;
+	transition: 0.35s;
+	transform: translate3d(0,100%,0);
+}
+
+.effect-oscar:hover .title {
+	transform: translate3d(0,0,0);
+}
+
+// ====== desc =======
+
+.effect-oscar .desc {
+	opacity: 0;
+	transition: 0.35s;
+	transform: scale(0);
+}
+
+.effect-oscar:hover .desc  {
+	opacity: 1;
+	transform: scale(1);
+}
+
+
+
+
+

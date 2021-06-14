@@ -1,0 +1,54 @@
+// ========= back ground ===========
+
+.effect-ruby {
+  background: #17819c !important;
+}
+
+.effect-ruby .img-bg {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.35s;
+} 
+
+.effect-ruby:hover .img-bg {
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+// ========= title ===========
+.effect-ruby .text-wrap {
+  text-align: center;
+}
+.effect-ruby .title {
+  margin: 25% auto 1em;
+  transform: translate3d(0, 1em, 0);
+  transition: 0.35s;
+}
+.effect-ruby:hover .title {
+  transform: translate3d(0,0,0);
+}
+
+// ========= desc ===========
+.effect-ruby .desc {
+  font-size: 13px;
+  padding: 3em;
+  position: relative;
+  transform: scale(1.15) ;
+  opacity: 0;
+  transition: 0.35s 0.05s;
+}
+
+.effect-ruby .desc::before {
+  position: absolute;
+  content: "";
+  inset: 10px;
+  border: 1px solid white;
+  transform: scale(1.15) ;
+  opacity: 0;
+  transition: 0.35s 0.05s;
+}
+.effect-ruby:hover .desc::before,
+.effect-ruby:hover .desc {
+  transform: scale(1) ;
+  opacity: 1;
+}
