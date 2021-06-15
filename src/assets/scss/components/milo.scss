@@ -1,0 +1,34 @@
+// =========== background ==============
+.effect-milo {
+  background: #2e5d5a !important;
+}
+.effect-milo .img-bg {
+  width: calc(100% + 30px);
+  transform: translate3d(-30px,0,0) scale(1.1);
+  transition: 0.4s;
+}
+.effect-milo:hover .img-bg {
+  opacity: 0.6;
+  transform: translate3d(0,0,0) scale(1);
+}
+// =========== title ==============
+.effect-milo .title {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+// =========== desc ==============
+.effect-milo .desc {
+  text-align: right;
+  width: 165px;
+  padding-right: 10px;
+  border-right: 2px solid white;
+  opacity: 0;
+  transform: translate3d(-40px,0,0);
+  transition: 0.4s 0.05s;
+}
+.effect-milo:hover .desc {
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}

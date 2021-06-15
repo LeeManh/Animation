@@ -1,0 +1,63 @@
+// ========= back ground =========
+.effect-bubba {
+  background: #9e5406 !important;
+}
+
+.effect-bubba .img-bg {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.effect-bubba:hover .img-bg {
+  opacity: 0.5;
+}
+
+// ========= title =========
+.effect-bubba .text-wrap {
+  text-align: center;
+}
+
+.effect-bubba .title {
+  padding-top: 30%;
+  padding-bottom: 1em;
+  transform: translate3d(0, -1em, 0);
+  transition: 0.4s;
+}
+
+.effect-bubba:hover .title {
+  transform: translate3d(0,0,0);
+}
+
+// ========= desc =========
+.effect-bubba .desc {
+  opacity: 0;
+  transform: translate3d(0, 2em, 0);
+  transition: 0.4s;
+}
+.effect-bubba:hover .desc {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+// ========= box =========
+.effect-bubba .caption::before,
+.effect-bubba .caption::after {
+  position: absolute;
+  content: "";
+  inset: 30px;
+  transition: 0.4s;
+}
+.effect-bubba .caption::before {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: scale(0, 1);
+}
+.effect-bubba .caption::after {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  transform: scale(1, 0);
+}
+.effect-bubba:hover .caption::after,
+.effect-bubba:hover .caption::before {
+  transform: scale(1);
+}

@@ -1,0 +1,48 @@
+// =========== background ==============
+.effect-chico {
+  perspective: 1000px;
+}
+.effect-chico .img-bg {
+  transition: 0.4s;
+  transform: translate3d(0,0,100px);
+}
+.effect-chico:hover .img-bg {
+  opacity: 0.5;
+  transform: translate3d(0,0,0);
+}
+// =========== title ==============
+.effect-chico .text-wrap {
+  text-align: center;
+}
+.effect-chico .title {
+  padding-top: 30%;
+  padding-bottom: 5%;
+}
+
+// =========== desc ==============
+.effect-chico .desc {
+  margin: 0 auto;
+	max-width: 150px;
+  transition: 0.4s;
+  opacity: 0;
+  transform: scale(1.5);
+}
+.effect-chico:hover .desc {
+  opacity: 1;
+  transform: scale(1);
+}
+
+// =========== box ==============
+.effect-chico .caption::before {
+  position: absolute;
+  content: "";
+  inset: 2em;
+  border: 2px solid white;
+  transform: scale(1.5);
+  opacity: 0;
+  transition: 0.4s;
+}
+.effect-chico:hover .caption::before {
+  transform: scale(1);
+  opacity: 1;
+}

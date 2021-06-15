@@ -12,6 +12,7 @@ img {
   object-position: center;
 }
 
+
 .grid {
 	position: relative;
 	margin: 0 auto;
@@ -19,24 +20,32 @@ img {
 	max-width: 1000px;
 	list-style: none;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 .grid__title {
-  padding: 4rem 1% 1rem;
+  width: 100%;
+  padding: 4rem 1% 2rem;
   clear: both;
   margin: 0;
+  text-align: center;
 }
 .grid figure {
   position: relative;
-  float: left;
   overflow: hidden;
   margin: 10px 1%;
-  width: 48%;
+  width: 100%;
   max-width: 480px;
   min-width: 320px;
-  height: 0;
-  padding-top: 35%;
+  min-height: 360px;
   background: #3085a3;
   cursor: pointer;
+  @media (max-width: 320px) {
+    min-width: unset;
+  }
 }
 
 figure .caption::before,

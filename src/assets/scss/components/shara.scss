@@ -1,0 +1,47 @@
+// =========== background ==============
+
+.effect-sarah {
+  background: #42b078 !important;
+}
+.effect-sarah .img-bg {
+  width: calc(100% + 50px);
+  transform: translate3d(-50px,0,0);
+  transition: 0.4s;
+}
+.effect-sarah:hover .img-bg {
+  transform: translate3d(0,0,0);
+  opacity: 0.5;
+}
+
+// =========== title ==============
+.effect-sarah .title {
+  padding-top: 10%;
+  padding-bottom: 1em;
+  position: relative;
+}
+.effect-sarah .title::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 2px solid white;
+  transition: 0.4s;
+  transform-origin: 0 0;
+  transform: scale(0 , 1);
+}
+.effect-sarah:hover .title::before {
+  transform: scale(1);
+} 
+
+// =========== desc ==============
+.effect-sarah .desc {
+  padding-top: 6%;
+  transition: 0.4s 0.05s;
+  opacity: 0;
+  transform: translate3d(100%,0,0);
+}
+.effect-sarah:hover .desc {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}

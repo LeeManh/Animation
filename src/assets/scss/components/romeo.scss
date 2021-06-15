@@ -1,0 +1,69 @@
+// ============ back ground ============
+.effect-romeo {
+  perspective: 1000px;
+  
+}
+
+.effect-romeo .img-bg {
+  transform: translate3d(0,0, 200px);
+  transition: 0.4s;
+}
+.effect-romeo:hover .img-bg {
+  opacity: 0.6;
+  transform: translate3d(0,0,0);
+}
+
+// ============ title ============
+.effect-romeo .text-wrap {
+  text-align: center;
+}
+.effect-romeo .title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translate3d(0,-50%,0) translate3d(0,-250%,0);
+} 
+.effect-romeo:hover .title {
+  transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+// ============ desc ============
+.effect-romeo .desc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 2em;
+  transform: translate3d(0, -50%, 0) translate3d(0,250%,0);
+  transition: 0.4s;
+}
+.effect-romeo:hover .desc {
+  transform: translate3d(0, -50%, 0) translate3d(0,100%,0);
+}
+
+// ============ line ============
+.effect-romeo .caption::before,
+.effect-romeo .caption::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transition: 0.4s;
+}
+.effect-romeo .caption::after {
+  transform: translate3d(-50%,-50%, 0) rotate(0);
+}
+.effect-romeo .caption::before {
+  transform: translate3d(-50%,-50%, 0) rotate(0);
+}
+
+.effect-romeo:hover .caption::before {
+  transform: translate3d(-50%,-50%, 0) rotate(45deg);
+}
+.effect-romeo:hover .caption::after {
+  transform: translate3d(-50%,-50%, 0) rotate(-45deg);
+}
